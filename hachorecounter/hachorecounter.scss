@@ -1,0 +1,81 @@
+@import "variables";
+
+// ----------------------------------------------------------------------------
+// Widget-hachorecounter styles
+// ----------------------------------------------------------------------------
+.widget-hachorecounter {
+  background-color: $gray-dark;
+
+  .title {
+    color: $white;
+  }
+
+  .value {
+    color: $blue;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .unit {
+    color: $gray-light;
+    font-size: 50%;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .status-good {
+    color: #00FF00;
+  }
+
+  .status-warn {
+    color: #FFFF00;
+  }
+
+  .status-bad {
+    color: #FF0000;
+  }
+
+
+  .dimmer-icon-off .dimmer-icon-on {
+    font-size: 150%;
+  }
+
+  .dimmer-icon-off {
+    color: $color-inactive;
+  }
+
+  .dimmer-icon-on {
+    color: $color-active;
+  }
+
+  .secondary-icon {
+    position: absolute;
+    bottom: 0px;
+    font-size: 25px;
+    width: 32px;
+    color: $color-inactive;
+
+    &.plus {
+      right: 24px;
+
+      i {
+        padding-top: 10px;
+        padding-left: 30px;
+      }
+    }
+
+    &.minus {
+      left: 8px;
+
+      i {
+        padding-top: 10px;
+        padding-right: 30px;
+      }
+    }
+  }
+
+
+}
